@@ -17,8 +17,9 @@
         params: request.params
       });
 
-      var self  = document.querySelector("[data-palomaid='" + id + "']");
-      if (self) self.parentNode.removeChild(self);
+//       For turbolinks 5 - keep hook in each page so browser back and forward buttons still work with Paloma
+//       var self  = document.querySelector("[data-palomaid='" + id + "']");
+//       if (self) self.parentNode.removeChild(self);
 
     })();
   </script>
